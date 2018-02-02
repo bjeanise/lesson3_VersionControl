@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>INSERT YOUR NAME</title>
+    <title>Lesson 3</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -67,7 +67,7 @@
         <div class="headline">
             <div class="container">
                 <h2>Lesson 3 Highlights</h2>
-                <h3>INSERT YOUR NAME</h3>
+                <h3>Barbara Siplin</h3>
             </div>
         </div>
     </header>
@@ -79,55 +79,69 @@
 
         <!-- First Featurette -->
         <div class="featurette" id="topic1">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/pexels-photo-control.jpg">
             <h2 class="featurette-heading">Highlight #1
-                <span class="text-muted">Topic 1 Header</span>
+                <span class="text-muted">Version Control</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Comprised of one main repository for all the project files, a version control system (VCS) records changes to a file or set of files over time so that specific versions of a file can be recalled later.  Moreover, VCSs facilitate reverting selected files back to a previous state, comparing changes over time, reflecting who last modified something that might be causing a problem, and determining who introduced an issue and when. VCS enable project team members to check files out, make changes, and then check them back in (or commit them). Some benefits of VCSs are: project files cannot be overwritten, a common repository holds all the recent files, and project team members may work on the same files concurrently absent of conflict.  In addition to facilitating team collaborations, VCSs are instrumental in backing up files for individual users so that these users will not lose their work or have to start a project over from scratch.</p>
+            
+            <p class="lead">Examples of VCS tools are RCSs, Centralized Version Control Systems (CVCSs), and Distributed Version Control Systems (DVCSs).  RCSs work by keeping the differences between files (called patch sets) in a special format on disk and then re-creating what any file looked like at any point in time by adding up all the patches. CVCSs enable system collaboration among developers.  Moreover, CVCSs such as CVS, Subversion, and Perforce, have a single server that contains all the versioned files. A number of clients may check out files from this server which serves as a central place.  Systems such as Git, Mercurial, Bazaar or Darcs are examples of DVCSs.  With these systems, clients don’t just check out the most recent snapshot of the project files instead they have access to the full repository-its entire history.  Therefore; in the event the server dies, the client repositories of any of those systems collaborating via that server can be copied back up to the server to restore it.</p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Second Featurette -->
         <div class="featurette" id="topic2">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-left" src="images/pexels-snapshots.jpg">
             <h2 class="featurette-heading">Highlight #2
-                <span class="text-muted">Topic 2 Header</span>
+                <span class="text-muted">Git</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
+            <p class="lead"> Git is a distributed version control system that views its data as a stream of snapshots. Git basically takes a picture of what all the project files look like at that moment and stores a reference to that snapshot every time developers commit or save the state of their project. For efficiency purposes, if files have not changed, Git doesn’t store the file again but just a link to the prior identical file it has already stored.  Most Git operations need only local files and resources to operate — no information is needed from another computer on the network. For instance,  Git doesn’t need to go out to the server to get the project's history; it simply reads it directly from the web developer’s local database. This means developers almost instantaneously get to see their  project's history. </p>
+            <p class="lead">  Committed, modified, and staged are the three main Git states that files can reside.  When the data is safely stored in the user’s local data, the file is referred to as committed.  Modified files are those the user have changed but have not committed to their database yet.  Staged means that the user has marked a modified file in its current version to go into their next commit snapshot.</p>
+            <p class="lead">The Git directory, the working tree, and the staging area are the three main sections of a Git project. The Git directory houses the project’s metadata and object database. The course materials for this class explain that the directory is the most important part of Git and that it (the directory) is what is copied when users clone a repository from another computer.  The working tree is a single checkout of one version of the project of which files are pulled out of the compressed database in the Git directory and placed on disk for use or modification. Usually contained in your Git directory, the staging area is a file that stores information about what will go into the next commit.</p>
+            </div>
 
         <hr class="featurette-divider">
 
         <!-- Third Featurette -->
         <div class="featurette" id="topic3">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/pexels-basic.jpg">
             <h2 class="featurette-heading">Highlight #3
-                <span class="text-muted">Topic 3 Header</span>
+                <span class="text-muted">Basic Git Commands</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Basic Git commands are: git init, git add, git commit, git push, git status, and git pull. Git init is the command that initializes the repository. Git add is the command that adds all the changed files since the last staging area’s backup. Git commit is the command that commits the file changes to the repository. Git push is the command that pushes local repository changes to the remote repository.  Git status is the command that shows all the files that were changes since the last backup and which ones are already added to the staging area.  Git pull is the command that pulls the changes in a remote repository to a local repository.</p>  <p class="lead">A file is considered committed if a specific version of that file is in the Git directory. A commit is a snapshot of the user’s repository.  Staged files are those modified and added to the staging area.  The staging area is where files are grouped together before the user commits them to Git. A file is modified if it was changed since it was checked out but not yet staged.</p>
+            <p class="lead"> The basic Git workflow involves three events (1) user modifying files in their working tree, (2) the user staging only those changes they desire to be part of their next commit, and (3) the user doing a commit which takes the files as they are in the staging area and permanently stores that snapshot to the user’s Git directory. In this regard, via Git, developers may look back at the changes made during the term of a project to see a timeline of all changes.</p>  
         </div>
         
         <hr class="featurette-divider">
         
        <!-- Fourth Featurette -->
         <div class="featurette" id="topic4">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-left" src="images/whyusegit.jpg">
             <h2 class="featurette-heading">Highlight #4
-                <span class="text-muted">Topic 4 Header</span>
+                <span class="text-muted">Why Use Git?</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Using VCSs such as Git can be considered as one of the components of web developers' best practices.  For example, a VCS allows developers to revert selected files as well as an entire project back to a previous state, compare project changes over time, and see who last modified something in the project that might be causing a problem--and the  aforementioned name just a few VCS capabilities. </p>
+               
+                <p class="lead">As a central location in which files are stored, repositories--as further described in the class notes-- are classified as remote and local.  A remote repository resides on a distant server that is shared among multiple team members working on a project.  Local repositories reside on a local machine of an individual user. With respect to remote repositories, if the server goes down none of the team members may collaborate or save versioned changes to anything they’re working on. Further, if the hard disk on which the central database is stored becomes corrupted and proper backups have not been kept, the entire history of the project is lost except for whatever single snapshots the individual users have on their local machines.  Local version control systems also suffer the same dilemma in that users having the entire history of a project in a single location risk losing everything. </p>
+               
+                <p class="lead">As a distributed version control system, Git addresses the aforementioned potential for lost.  It is advantageous for developers to use Git because with this system clients don’t merely check out the latest snapshot of the files but fully mirror the repository, including its full history. Hence, in the event the server dies, any of the client repositories can be copied back up to the server to restore it.</p>
+               
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Fifth Featurette -->
         <div class="featurette" id="topic5">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/pexels-localvremote.jpg">
             <h2 class="featurette-heading">Highlight #5
-                <span class="text-muted">Topic 5 Header</span>
+                <span class="text-muted">Local vs. Remote Repositories</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">A local Git repository resides on a local machine of an individual user and is created in two ways: by the user taking a local directory that is currently not under version control and making it a new Git repository or by the user cloning an existing remote repository onto their local machine. Most operations in Git need only local files and resources to operate — meaning no information is needed from another computer on the user’s network.  As the user has the entire history of the project right there on their local disk, Git doesn’t need to go out to the server to get the project’s history — it simply reads it directly from the user’s local database. This means the user gets to see the project history almost instantly.  </p>
+            
+             <p class="lead">Remote repositories are versions of a project that reside on a remote server (for example, hosted on the Internet) that are shared among multiple team members.  To be able to collaborate on any Git project, users need to know how to manage their remote repositories. This collaborating with others involves users managing these remote repositories and pushing and pulling data to and from them when it is necessary to share work. Examples of remote commands are: git remote, git push, and git pull. The course notes for this class explain that managing remote repositories includes knowing how to add remote repositories, remove remotes that are no longer valid, manage various remote branches and define them as being tracked or not, and more.</p>
+                
+                <p class="lead"> In conclusion, this is first my journey into the world of VCSs.  To better acclimate my knowledge, I participated in some of the interactive exercises in lesson three. I look forward to learning more about VCSs.</p> 
         </div>
 
         <hr class="featurette-divider">
@@ -136,7 +150,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; 2018</p>
+                    <p>Copyright &copy; B Siplin - LIS 2360, Spring 2018</p>
                 </div>
             </div>
         </footer>
